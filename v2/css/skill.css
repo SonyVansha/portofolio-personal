@@ -1,0 +1,239 @@
+/* Skill Icon */
+.skill-pill {
+  transition: all 0.3s ease;
+  background: #1e293b;
+  border: 1px solid #334155;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-pill:hover {
+  transform: scale(1.05);
+  border-color: var(--secondary);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+}
+
+.skill-icon {
+  position: relative;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.skill-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.3) 0%, transparent 70%);
+  opacity: 0;
+  z-index: 1;
+  animation: pulse 2s infinite;
+}
+
+/* .skill-shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  z-index: 3;
+  animation: shine 3s infinite;
+} */
+
+.skill-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.skill-particle {
+  position: absolute;
+  background-color: rgba(16, 185, 129, 0.5);
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  opacity: 0;
+  z-index: 1;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.2; transform: translate(-50%, -50%) scale(0.8); }
+  50% { opacity: 0.6; transform: translate(-50%, -50%) scale(1.1); }
+  100% { opacity: 0.2; transform: translate(-50%, -50%) scale(0.8); }
+}
+
+/* @keyframes shine {
+  0% { left: -100%; }
+  20% { left: 100%; }
+  100% { left: 100%; }
+} */
+
+@keyframes float-particle {
+  0% { transform: translateY(0) translateX(0); opacity: 0; }
+  20% { opacity: 0.8; }
+  100% { transform: translateY(-20px) translateX(10px); opacity: 0; }
+}
+
+/* HTML skill specific */
+.skill-html:hover .skill-icon {
+  color: #e34c26 !important;
+}
+
+.skill-html:hover .skill-glow {
+  background: radial-gradient(circle, rgba(227, 76, 38, 0.3) 0%, transparent 70%);
+}
+
+.skill-html .skill-particle {
+  background-color: rgba(227, 76, 38, 0.5);
+}
+
+/* CSS skill specific */
+.skill-css:hover .skill-icon {
+  color: #264de4 !important;
+}
+
+.skill-css:hover .skill-glow {
+  background: radial-gradient(circle, rgba(38, 77, 228, 0.3) 0%, transparent 70%);
+}
+
+.skill-css .skill-particle {
+  background-color: rgba(38, 77, 228, 0.5);
+}
+
+/* JS skill specific */
+.skill-js:hover .skill-icon {
+  color: #f7df1e !important;
+}
+
+.skill-js:hover .skill-glow {
+  background: radial-gradient(circle, rgba(247, 223, 30, 0.3) 0%, transparent 70%);
+}
+
+.skill-js .skill-particle {
+  background-color: rgba(247, 223, 30, 0.5);
+}
+
+/* React skill specific */
+.skill-react:hover .skill-icon {
+  color: #61dafb !important;
+}
+
+.skill-react:hover .skill-glow {
+  background: radial-gradient(circle, rgba(97, 218, 251, 0.3) 0%, transparent 70%);
+}
+
+.skill-react .skill-particle {
+  background-color: rgba(97, 218, 251, 0.5);
+}
+
+/* Node skill specific */
+.skill-node:hover .skill-icon {
+  color: #68a063 !important;
+}
+
+.skill-node:hover .skill-glow {
+  background: radial-gradient(circle, rgba(104, 160, 99, 0.3) 0%, transparent 70%);
+}
+
+.skill-node .skill-particle {
+  background-color: rgba(104, 160, 99, 0.5);
+}
+
+/* MongoDB skill specific */
+.skill-mongo:hover .skill-icon {
+  color: #4db33d !important;
+}
+
+.skill-mongo:hover .skill-glow {
+  background: radial-gradient(circle, rgba(77, 179, 61, 0.3) 0%, transparent 70%);
+}
+
+.skill-mongo .skill-particle {
+  background-color: rgba(77, 179, 61, 0.5);
+}
+
+/* Figma skill specific */
+.skill-figma:hover .skill-icon {
+  color: #f24e1e !important;
+}
+
+.skill-figma:hover .skill-glow {
+  background: radial-gradient(circle, rgba(242, 78, 30, 0.3) 0%, transparent 70%);
+}
+
+.skill-figma .skill-particle {
+  background-color: rgba(242, 78, 30, 0.5);
+}
+
+/* Git skill specific */
+.skill-git:hover .skill-icon {
+  color: #f05032 !important;
+}
+
+.skill-git:hover .skill-glow {
+  background: radial-gradient(circle, rgba(240, 80, 50, 0.3) 0%, transparent 70%);
+}
+
+.skill-git .skill-particle {
+  background-color: rgba(240, 80, 50, 0.5);
+}
+
+/* Docker skill specific */
+.skill-docker:hover .skill-icon {
+  color: #2496ed !important;
+}
+
+.skill-docker:hover .skill-glow {
+  background: radial-gradient(circle, rgba(36, 150, 237, 0.3) 0%, transparent 70%);
+}
+
+.skill-docker .skill-particle {
+  background-color: rgba(36, 150, 237, 0.5);
+}
+
+/* AWS skill specific */
+.skill-aws:hover .skill-icon {
+  color: #ff9900 !important;
+}
+
+.skill-aws:hover .skill-glow {
+  background: radial-gradient(circle, rgba(255, 153, 0, 0.3) 0%, transparent 70%);
+}
+
+.skill-aws .skill-particle {
+  background-color: rgba(255, 153, 0, 0.5);
+}
+
+/* Python skill specific */
+.skill-python:hover .skill-icon {
+  color: #3776ab !important;
+}
+
+.skill-python:hover .skill-glow {
+  background: radial-gradient(circle, rgba(55, 118, 171, 0.3) 0%, transparent 70%);
+}
+
+.skill-python .skill-particle {
+  background-color: rgba(55, 118, 171, 0.5);
+}
+
+/* Cybersecurity skill specific */
+.skill-security:hover .skill-icon {
+  color: #c21807 !important;
+}
+
+.skill-security:hover .skill-glow {
+  background: radial-gradient(circle, rgba(194, 24, 7, 0.3) 0%, transparent 70%);
+}
+
+.skill-security .skill-particle {
+  background-color: rgba(194, 24, 7, 0.5);
+}

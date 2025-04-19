@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sony Vansha | Portfolio</title>
+
+  <!-- CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/skill.css">
+
+  <!-- font awesome and animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+
+</head>
+
+<body>
+  <!-- Custom Cursor Elements -->
+  <div class="cursor-follower"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-text"></div>
+
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 bg-slate-900 text-white shadow-lg border-b border-slate-700">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold code-font clickable">Sony
+        <span class="text-emerald-400">Vansha</span><span class="text-emerald-400 animate-blink">_</span></a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex space-x-6">
+        <a href="#home" class="nav-link active clickable">Home</a>
+        <a href="#about" class="nav-link clickable">About</a>
+        <a href="#experience" class="nav-link clickable">Experience</a>
+        <a href="#education" class="nav-link clickable">Education</a>
+        <a href="#skills" class="nav-link clickable">Skills</a>
+        <a href="#organizations" class="nav-link clickable">Organizations</a>
+        <a href="#achievements" class="nav-link clickable">Achievements</a>
+        <a href="#certificates" class="nav-link clickable">Certificates</a>
+        <a href="#projects" class="nav-link clickable">Projects</a>
+        <a href="#contact" class="nav-link clickable">Contact</a>
+      </div>
+
+      <!-- Mobile Navigation Toggle -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="hamburger focus:outline-none clickable">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-slate-800 pb-4">
+      <div class="container mx-auto px-4 flex flex-col space-y-3">
+        <a href="#home" class="py-2 px-4 hover:bg-slate-700 rounded clickable">Home</a>
+        <a href="#about" class="py-2 px-4 hover:bg-slate-700 rounded clickable">About</a>
+        <a href="#experience" class="py-2 px-4 hover:bg-slate-700 rounded clickable">Experience</a>
+        <a href="#education" class="py-2 px-4 hover:bg-slate-700 rounded clickable">Education</a>
+        <a href="#skills" class="py-2 px-4 hover:bg-slate-700 rounded clickable">Skills</a>
+        <a href="#organizations" class="py-2 px-4 hover:bg-slate-700 rounded clickable">Organizations</a>
+        <a href="#achievements" class="py-2 px-4 hover:bg-slate-700 rounded clickable">Achievements</a>
+        <a href="#certificate" class="py-2 px-4 hover:bg-slate-700 rounded clickable">Certificate</a>
+        <a href="#projects" class="py-2 px-4 hover:bg-slate-700 rounded clickable">projects</a>
+        <a href="#contact" class="py-2 px-4 hover:bg-slate-700 rounded clickable">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-bg text-white min-h-screen flex items-center pt-16">
+    <div class="matrix-bg" id="matrix-canvas"></div>
+    <div class="particles-container" id="particles"></div>
+    <div class="container mx-auto px-4 py-16 hero-content">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+          <p class="text-emerald-400 code-font mb-2">
+            &lt; Hello World /&gt;
+          </p>
+
+          <!-- Title Name -->
+          <h1 class="text-4xl md:text-6xl font-bold mb-4">
+            I'm <span class="text-emerald-400">Sony Vansha</span>
+          </h1>
+
+          <!-- Overview Job -->
+          <div class="h-12 overflow-hidden">
+            <div id="text-rotation" class="text-xl md:text-2xl mb-8 code-font">
+              <div class="text-blue-400">Problem Solver</div>
+              <div class="text-purple-400">DevOps Engineer</div>
+              <div class="text-emerald-400">Full Stack Engineer</div>
+              <div class="text-yellow-400">Cloud Engineering</div>
+            </div>
+          </div>
+
+          <!-- Decs -->
+          <p class="text-lg mb-8 max-w-lg text-slate-300">
+            Building innovative digital solutions with clean code and
+            exceptional user experiences.
+          </p>
+
+          <!-- Buttons in Home -->
+          <div class="flex space-x-4">
+            <a href="#contact"
+              class="glow-button bg-emerald-500 hover:bg-emerald-600 text-slate-900 font-bold py-3 px-6 rounded-md transition duration-300 flex items-center clickable">
+              Contact Me <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+            <a href="#about"
+              class="glow-button bg-transparent hover:bg-slate-700 text-white font-bold py-3 px-6 rounded-md border-2 border-emerald-500 transition duration-300 clickable">
+              About Me
+            </a>
+          </div>
+
+          <!-- Social Media Icons -->
+          <div class="mt-8 flex space-x-4">
+            <a href="#" class="social-icon text-slate-300 hover:text-emerald-400 text-xl clickable">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social-icon text-slate-300 hover:text-emerald-400 text-xl clickable">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-icon text-slate-300 hover:text-emerald-400 text-xl clickable">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icon text-slate-300 hover:text-emerald-400 text-xl clickable">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon text-slate-300 hover:text-emerald-400 text-xl clickable">
+              <i class="fab fa-dev"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Image -->
+        <div class="md:w-1/2 flex justify-center">
+          <div class="relative w-64 h-64 md:w-80 md:h-80">
+            <div class="absolute inset-0 rounded-full bg-blue-500 opacity-10 animate-pulse"></div>
+            <div class="absolute inset-4 rounded-full bg-slate-700 opacity-80"></div>
+            <div class="absolute inset-8 rounded-full profile-image overflow-hidden">
+              <!-- Replace with actual image -->
+              <div class="w-full h-full bg-slate-600 flex items-center justify-center">
+                <i class="fas fa-user text-6xl text-slate-400"></i>
+                <!-- Placeholder for professional photo -->
+                <!-- <img src="your-professional-photo.jpg" alt="Sony Vansha" class="w-full h-full object-cover"> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Icon V -->
+      <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <a href="#about" class="text-slate-400 hover:text-emerald-400 clickable">
+          <i class="fas fa-chevron-down text-2xl"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 tech-bg">
+    <div class="container mx-auto px-4 tech-content">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 section-heading">
+          About Me
+        </h2>
+        <div class="w-24 h-1 bg-emerald-500 mx-auto"></div>
+      </div>
+
+      <!-- Me section -->
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+          <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+            <h3 class="text-2xl font-bold text-white mb-4 code-font">
+              $ whoami
+            </h3>
+            <p class="text-slate-300 mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum urna sit amet nibh condimentum hendrerit. Suspendisse fringilla ipsum id dui mattis, nec commodo tortor rhoncus. Etiam in fermentum metus, quis malesuada erat. In vulputate tristique scelerisque. Curabitur nec ligula vel ipsum tincidunt tincidunt et a sapien. Fusce ut erat ac mi malesuada pellentesque. Duis at tellus ut augue lacinia auctor vel sed sapien. In id elit ut mauris tempus tristique.
+            </p>
+
+            <h3 class="text-2xl font-bold text-white mb-4 code-font">
+              $ history
+            </h3>
+            <p class="text-slate-300 mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum urna sit amet nibh condimentum hendrerit. Suspendisse fringilla ipsum id dui mattis, nec commodo tortor rhoncus. Etiam in fermentum metus, quis malesuada erat. In vulputate tristique scelerisque. Curabitur nec ligula vel ipsum tincidunt tincidunt et a sapien. Fusce ut erat ac mi malesuada pellentesque. Duis at tellus ut augue lacinia auctor vel sed sapien. In id elit ut mauris tempus tristique
+            </p>
+
+            <!-- Overview Rate -->
+            <div class="flex flex-wrap gap-4">
+              <div class="flex items-center">
+                <div class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center mr-4">
+                  <i class="fas fa-briefcase text-emerald-400 text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white">5+ Years</h4>
+                  <p class="text-sm text-slate-400">Experience</p>
+                </div>
+              </div>
+
+              <div class="flex items-center">
+                <div class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center mr-4">
+                  <i class="fas fa-laptop-code text-emerald-400 text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white">50+</h4>
+                  <p class="text-sm text-slate-400">Projects</p>
+                </div>
+              </div>
+
+              <div class="flex items-center">
+                <div class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center mr-4">
+                  <i class="fas fa-smile text-emerald-400 text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white">30+</h4>
+                  <p class="text-sm text-slate-400">Happy Clients</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CS / Resume -->
+            <div class="mt-8">
+              <a href="#"
+                class="glow-button inline-flex items-center bg-emerald-500 hover:bg-emerald-600 text-slate-900 font-bold py-3 px-6 rounded-md transition duration-300 clickable">
+                <i class="fas fa-download mr-2"></i> Download CV
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="md:w-1/2 md:pl-10">
+          <h3 class="text-2xl font-bold text-white mb-6 code-font">
+            $ skills --top
+          </h3>
+
+          <!-- Network -->
+          <div class="mb-6">
+            <div class="flex justify-between mb-2">
+              <span class="font-medium text-white">Network</span>
+              <span class="text-emerald-400">62%</span>
+            </div>
+            <div class="w-full bg-slate-700 rounded-full h-2.5">
+              <div class="bg-emerald-500 h-2.5 rounded-full progress-bar" style="width: 62%"></div>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <div class="flex justify-between mb-2">
+              <span class="font-medium text-white">System Administrator</span>
+              <span class="text-emerald-400">81%</span>
+            </div>
+            <div class="w-full bg-slate-700 rounded-full h-2.5">
+              <div class="bg-cyan-500 h-2.5 rounded-full progress-bar" style="width: 81%"></div>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <div class="flex justify-between mb-2">
+              <span class="font-medium text-white">Cloud Computing</span>
+              <span class="text-emerald-400">85%</span>
+            </div>
+            <div class="w-full bg-slate-700 rounded-full h-2.5">
+              <div class="bg-yellow-500 h-2.5 rounded-full progress-bar" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <div class="flex justify-between mb-2">
+              <span class="font-medium text-white">Programmer</span>
+              <span class="text-emerald-400">67%</span>
+            </div>
+            <div class="w-full bg-slate-700 rounded-full h-2.5">
+              <div class="bg-purple-500 h-2.5 rounded-full progress-bar" style="width: 67%"></div>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <div class="flex justify-between mb-2">
+              <span class="font-medium text-white">Programmer</span>
+              <span class="text-emerald-400">43%</span>
+            </div>
+            <div class="w-full bg-slate-700 rounded-full h-2.5">
+              <div class="bg-orange-500 h-2.5 rounded-full progress-bar" style="width: 43%"></div>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <div class="flex justify-between mb-2">
+              <span class="font-medium text-white">Cybersecurity</span>
+              <span class="text-emerald-400">12%</span>
+            </div>
+            <div class="w-full bg-slate-700 rounded-full h-2.5">
+              <div class="bg-gray-500 h-2.5 rounded-full progress-bar" style="width: 12%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 bg-slate-900">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 section-heading">
+          Work Experience
+        </h2>
+        <div class="w-24 h-1 bg-emerald-500 mx-auto"></div>
+        <p class="mt-4 text-slate-300 max-w-2xl mx-auto">
+          My professional journey and the companies I've had the privilege to
+          work with.
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <div class="relative pl-8 border-l-2 border-slate-700">
+
+          <!-- Experience Item 1 -->
+          <div class="experience-card relative bg-slate-800 p-6 rounded-lg shadow-md mb-10">
+            <div class="timeline-dot"></div>
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+              <h3 class="text-xl font-bold text-white">
+                Project Training Albee Tech
+              </h3>
+              <div class="flex items-center mt-2 md:mt-0">
+                <span class="bg-blue-900 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded">2023</span>
+              </div>
+            </div>
+            <h4 class="text-lg font-medium text-emerald-400 mb-2">
+              Training Albee Tech
+            </h4>
+            <p class="text-slate-300 mb-4">
+              Build a website manually with VPS placement, optimal server configuration, and domain integration so that your website is easily accessible.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">PHP</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">MYSQL</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">VPS</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Domain</span>
+            </div>
+          </div>
+
+          <!-- Experience Item 2 -->
+          <div class="experience-card relative bg-slate-800 p-6 rounded-lg shadow-md mb-10">
+            <div class="timeline-dot"></div>
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+              <h3 class="text-xl font-bold text-white">LKS Cloud Computing</h3>
+              <div class="flex items-center mt-2 md:mt-0">
+                <span class="bg-blue-900 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded">2023 - 2024</span>
+              </div>
+            </div>
+            <h4 class="text-lg font-medium text-emerald-400 mb-2">
+              LKS SMK
+            </h4>
+            <p class="text-slate-300 mb-4">
+              Mastering AWS serverless architecture for Node.js applications, including deployment and integration of various AWS services. Also experienced in IoT application development with AWS, data visualization, and Linux configuration and network infrastructure.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">AWS</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Node.js</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">IoT</span>
+            </div>
+          </div>
+
+          <!-- Experience Item 3 -->
+          <div class="experience-card relative bg-slate-800 p-6 rounded-lg shadow-md">
+            <div class="timeline-dot"></div>
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+              <h3 class="text-xl font-bold text-white">
+                Nakiba Technology
+              </h3>
+              <div class="flex items-center mt-2 md:mt-0">
+                <span class="bg-blue-900 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded">2024</span>
+              </div>
+            </div>
+            <h4 class="text-lg font-medium text-emerald-400 mb-2">
+              Internship
+            </h4>
+            <p class="text-slate-300 mb-4">
+              Focus on System Administration, Security, and DevOps: Dive deeper into Red Hat administration, implementation of various security tools, CI/CD practices, and container orchestration using Kubernetes
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">RedHat</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Jenkins</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Kubernetes</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Docker</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">OpenStack</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Terraform</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-20 tech-bg">
+    <div class="container mx-auto px-4 tech-content">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 section-heading">
+          Education
+        </h2>
+        <div class="w-24 h-1 bg-emerald-500 mx-auto"></div>
+        <p class="mt-4 text-slate-300 max-w-2xl mx-auto">
+          My academic journey that has shaped my knowledge and expertise in
+          the field.
+        </p>
+      </div>
+
+      <!-- Journa Education -->
+      <div class="max-w-4xl mx-auto">
+        <div class="relative pl-8 border-l-2 border-slate-700">
+          
+          <!-- Education Item 1 -->
+          <div class="education-card relative bg-slate-800 p-6 rounded-lg shadow-md mb-10">
+            <div class="timeline-dot"></div>
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+              <h3 class="text-xl font-bold text-white">
+                Computer and Network Engineering
+              </h3>
+              <div class="flex items-center mt-2 md:mt-0">
+                <span class="bg-purple-900 text-purple-300 text-xs font-medium px-2.5 py-0.5 rounded">2022 - 2025</span>
+              </div>
+            </div>
+            <h4 class="text-lg font-medium text-emerald-400 mb-2">
+              SMKN 1 Nglegok
+            </h4>
+            <p class="text-slate-300 mb-4">
+              I learned about Network, System Administrator, and Cloud Computing
+            </p>
+            <!-- <div class="flex flex-wrap gap-2">
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">GPA:
+                3.9/4.0</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Thesis:
+                Modern Web Architecture</span>
+            </div> -->
+          </div>
+
+          <!-- Education Item 2 -->
+          <!-- <div class="education-card relative bg-slate-800 p-6 rounded-lg shadow-md mb-10">
+            <div class="timeline-dot"></div>
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+              <h3 class="text-xl font-bold text-white">
+                Bachelor of Computer Science
+              </h3>
+              <div class="flex items-center mt-2 md:mt-0">
+                <span class="bg-purple-900 text-purple-300 text-xs font-medium px-2.5 py-0.5 rounded">2014
+                  - 2018</span>
+              </div>
+            </div>
+            <h4 class="text-lg font-medium text-emerald-400 mb-2">
+              State University
+            </h4>
+            <p class="text-slate-300 mb-4">
+              Studied core computer science principles, software development,
+              and web technologies. Participated in multiple hackathons and
+              coding competitions.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">GPA:
+                3.8/4.0</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Dean's
+                List: 7 semesters</span>
+            </div>
+          </div> -->
+
+          <!-- Education Item 3 -->
+          <!-- <div class="education-card relative bg-slate-800 p-6 rounded-lg shadow-md">
+            <div class="timeline-dot"></div>
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+              <h3 class="text-xl font-bold text-white">
+                High School Diploma
+              </h3>
+              <div class="flex items-center mt-2 md:mt-0">
+                <span class="bg-purple-900 text-purple-300 text-xs font-medium px-2.5 py-0.5 rounded">2011
+                  - 2014</span>
+              </div>
+            </div>
+            <h4 class="text-lg font-medium text-emerald-400 mb-2">
+              Science High School
+            </h4>
+            <p class="text-slate-300 mb-4">
+              Focused on mathematics and computer science. Developed a strong
+              foundation in logical thinking and problem-solving skills.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Graduated
+                with Honors</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Computer
+                Science Club President</span>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-slate-900">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 section-heading">My Skills</h2>
+        <div class="w-24 h-1 bg-emerald-500 mx-auto"></div>
+        <p class="mt-4 text-slate-300 max-w-2xl mx-auto">I've worked with a variety of technologies and tools throughout
+          my career. Here are some of the key skills I bring to the table.</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- HTML5 Skill -->
+        <div class="skill-pill skill-html bg-slate-800 p-6 rounded-lg shadow-md flex flex-col items-center">
+          <div class="w-16 h-16 rounded-full bg-slate-700 flex items-center justify-center mb-4 relative">
+            <i class="fab fa-html5 skill-icon text-emerald-400 text-3xl"></i>
+            <div class="skill-glow"></div>
+            <div class="skill-shine"></div>
+            <div class="skill-particles"></div>
+          </div>
+          <h3 class="font-bold text-lg text-white">HTML5</h3>
+        </div>
+
+        <!-- CSS3 Skill -->
+        <div class="skill-pill skill-css bg-slate-800 p-6 rounded-lg shadow-md flex flex-col items-center">
+          <div class="w-16 h-16 rounded-full bg-slate-700 flex items-center justify-center mb-4 relative">
+            <i class="fab fa-css3-alt skill-icon text-emerald-400 text-3xl"></i>
+            <div class="skill-glow"></div>
+            <div class="skill-shine"></div>
+            <div class="skill-particles"></div>
+          </div>
+          <h3 class="font-bold text-lg text-white">CSS3</h3>
+        </div>
+
+        <!-- JavaScript Skill -->
+        <div class="skill-pill skill-js bg-slate-800 p-6 rounded-lg shadow-md flex flex-col items-center">
+          <div class="w-16 h-16 rounded-full bg-slate-700 flex items-center justify-center mb-4 relative">
+            <i class="fab fa-js skill-icon text-emerald-400 text-3xl"></i>
+            <div class="skill-glow"></div>
+            <div class="skill-shine"></div>
+            <div class="skill-particles"></div>
+          </div>
+          <h3 class="font-bold text-lg text-white">JavaScript</h3>
+        </div>
+
+        <!-- React Skill -->
+        <div class="skill-pill skill-react bg-slate-800 p-6 rounded-lg shadow-md flex flex-col items-center">
+          <div class="w-16 h-16 rounded-full bg-slate-700 flex items-center justify-center mb-4 relative">
+            <i class="fab fa-react skill-icon text-emerald-400 text-3xl"></i>
+            <div class="skill-glow"></div>
+            <div class="skill-shine"></div>
+            <div class="skill-particles"></div>
+          </div>
+          <h3 class="font-bold text-lg text-white">React</h3>
+        </div>
+
+        <!-- Node.js Skill -->
+        <div class="skill-pill skill-node bg-slate-800 p-6 rounded-lg shadow-md flex flex-col items-center">
+          <div class="w-16 h-16 rounded-full bg-slate-700 flex items-center justify-center mb-4 relative">
+            <i class="fab fa-node-js skill-icon text-emerald-400 text-3xl"></i>
+            <div class="skill-glow"></div>
+            <div class="skill-shine"></div>
+            <div class="skill-particles"></div>
+          </div>
+          <h3 class="font-bold text-lg text-white">Node.js</h3>
+        </div>
+
+        <!-- MongoDB Skill -->
+        <div class="skill-pill skill-mongo bg-slate-800 p-6 rounded-lg shadow-md flex flex-col items-center">
+          <div class="w-16 h-16 rounded-full bg-slate-700 flex items-center justify-center mb-4 relative">
+            <i class="fas fa-database skill-icon text-emerald-400 text-3xl"></i>
+            <div class="skill-glow"></div>
+            <div class="skill-shine"></div>
+            <div class="skill-particles"></div>
+          </div>
+          <h3 class="font-bold text-lg text-white">MongoDB</h3>
+        </div>
+
+        <!-- Figma Skill -->
+        <div class="skill-pill skill-figma bg-slate-800 p-6 rounded-lg shadow-md flex flex-col items-center">
+          <div class="w-16 h-16 rounded-full bg-slate-700 flex items-center justify-center mb-4 relative">
+            <i class="fab fa-figma skill-icon text-emerald-400 text-3xl"></i>
+            <div class="skill-glow"></div>
+            <div class="skill-shine"></div>
+            <div class="skill-particles"></div>
+          </div>
+          <h3 class="font-bold text-lg text-white">Figma</h3>
+        </div>
+
+        <!-- Git Skill -->
+        <div class="skill-pill skill-git bg-slate-800 p-6 rounded-lg shadow-md flex flex-col items-center">
+          <div class="w-16 h-16 rounded-full bg-slate-700 flex items-center justify-center mb-4 relative">
+            <i class="fab fa-git-alt skill-icon text-emerald-400 text-3xl"></i>
+            <div class="skill-glow"></div>
+            <div class="skill-shine"></div>
+            <div class="skill-particles"></div>
+          </div>
+          <h3 class="font-bold text-lg text-white">Git</h3>
+        </div>
+
+        <!-- Docker Skill -->
+        <div class="skill-pill skill-docker bg-slate-800 p-6 rounded-lg shadow-md flex flex-col items-center">
+          <div class="w-16 h-16 rounded-full bg-slate-700 flex items-center justify-center mb-4 relative">
+            <i class="fab fa-docker skill-icon text-emerald-400 text-3xl"></i>
+            <div class="skill-glow"></div>
+            <div class="skill-shine"></div>
+            <div class="skill-particles"></div>
+          </div>
+          <h3 class="font-bold text-lg text-white">Docker</h3>
+        </div>
+
+        <!-- AWS Skill -->
+        <div class="skill-pill skill-aws bg-slate-800 p-6 rounded-lg shadow-md flex flex-col items-center">
+          <div class="w-16 h-16 rounded-full bg-slate-700 flex items-center justify-center mb-4 relative">
+            <i class="fab fa-aws skill-icon text-emerald-400 text-3xl"></i>
+            <div class="skill-glow"></div>
+            <div class="skill-shine"></div>
+            <div class="skill-particles"></div>
+          </div>
+          <h3 class="font-bold text-lg text-white">AWS</h3>
+        </div>
+
+        <!-- Python Skill -->
+        <div class="skill-pill skill-python bg-slate-800 p-6 rounded-lg shadow-md flex flex-col items-center">
+          <div class="w-16 h-16 rounded-full bg-slate-700 flex items-center justify-center mb-4 relative">
+            <i class="fab fa-python skill-icon text-emerald-400 text-3xl"></i>
+            <div class="skill-glow"></div>
+            <div class="skill-shine"></div>
+            <div class="skill-particles"></div>
+          </div>
+          <h3 class="font-bold text-lg text-white">Python</h3>
+        </div>
+
+        <!-- Cybersecurity Skill -->
+        <div class="skill-pill skill-security bg-slate-800 p-6 rounded-lg shadow-md flex flex-col items-center">
+          <div class="w-16 h-16 rounded-full bg-slate-700 flex items-center justify-center mb-4 relative">
+            <i class="fas fa-shield-alt skill-icon text-emerald-400 text-3xl"></i>
+            <div class="skill-glow"></div>
+            <div class="skill-shine"></div>
+            <div class="skill-particles"></div>
+          </div>
+          <h3 class="font-bold text-lg text-white">Cybersecurity</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organizations Section -->
+  <section id="organizations" class="py-20 tech-bg">
+    <div class="container mx-auto px-4 tech-content">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 section-heading">Organizations</h2>
+        <div class="w-24 h-1 bg-emerald-500 mx-auto"></div>
+        <p class="mt-4 text-slate-300 max-w-2xl mx-auto">Professional organizations and communities I'm actively
+          involved with.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Organization 1 -->
+        <div class="organization-card bg-slate-800 rounded-lg overflow-hidden shadow-lg">
+          <div class="h-24 bg-gradient-to-r from-blue-600 to-blue-800 flex items-center justify-center p-6">
+            <i class="fas fa-laptop-code text-white text-4xl"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-white">Komunitas KITS</h3>
+            <p class="text-slate-300 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum urna sit amet nibh condimentum hendrerit. Suspendisse fringilla ipsum id dui mattis, nec commodo tortor rhoncus. Etiam in fermentum metus, quis malesuada erat.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-slate-400">Member since 2019</span>
+              <span class="text-sm text-emerald-400">Committee Member</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Organization 2 -->
+        <!-- <div class="organization-card bg-slate-800 rounded-lg overflow-hidden shadow-lg">
+          <div class="h-24 bg-gradient-to-r from-purple-600 to-purple-800 flex items-center justify-center p-6">
+            <i class="fas fa-users text-white text-4xl"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-white">Web Accessibility Initiative</h3>
+            <p class="text-slate-300 mb-4">Advocate for accessible web design and development practices across the
+              industry.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-slate-400">Member since 2020</span>
+              <span class="text-sm text-emerald-400">Volunteer</span>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Organization 3 -->
+        <!-- <div class="organization-card bg-slate-800 rounded-lg overflow-hidden shadow-lg">
+          <div class="h-24 bg-gradient-to-r from-emerald-600 to-emerald-800 flex items-center justify-center p-6">
+            <i class="fas fa-code-branch text-white text-4xl"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-white">Open Source Collective</h3>
+            <p class="text-slate-300 mb-4">Contributor to various open-source projects focusing on developer tools and
+              utilities.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-slate-400">Member since 2018</span>
+              <span class="text-sm text-emerald-400">Core Contributor</span>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Organization 4 -->
+        <!-- <div class="organization-card bg-slate-800 rounded-lg overflow-hidden shadow-lg">
+          <div class="h-24 bg-gradient-to-r from-red-600 to-red-800 flex items-center justify-center p-6">
+            <i class="fas fa-chalkboard-teacher text-white text-4xl"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-white">Code Mentors Network</h3>
+            <p class="text-slate-300 mb-4">Providing guidance and mentorship to aspiring developers through structured
+              programs.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-slate-400">Member since 2021</span>
+              <span class="text-sm text-emerald-400">Senior Mentor</span>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Organization 5 -->
+        <!-- <div class="organization-card bg-slate-800 rounded-lg overflow-hidden shadow-lg">
+          <div class="h-24 bg-gradient-to-r from-yellow-600 to-yellow-800 flex items-center justify-center p-6">
+            <i class="fas fa-shield-alt text-white text-4xl"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-white">Cybersecurity Alliance</h3>
+            <p class="text-slate-300 mb-4">Participating in security research and promoting best practices for web
+              application security.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-slate-400">Member since 2020</span>
+              <span class="text-sm text-emerald-400">Associate Member</span>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Organization 6 -->
+        <!-- <div class="organization-card bg-slate-800 rounded-lg overflow-hidden shadow-lg">
+          <div class="h-24 bg-gradient-to-r from-pink-600 to-pink-800 flex items-center justify-center p-6">
+            <i class="fas fa-graduation-cap text-white text-4xl"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-white">Tech Education Foundation</h3>
+            <p class="text-slate-300 mb-4">Supporting initiatives to bring technology education to underserved
+              communities.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-slate-400">Member since 2019</span>
+              <span class="text-sm text-emerald-400">Volunteer Instructor</span>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="py-20 bg-slate-900">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 section-heading">Achievements</h2>
+        <div class="w-24 h-1 bg-emerald-500 mx-auto"></div>
+        <p class="mt-4 text-slate-300 max-w-2xl mx-auto">Key milestones and recognition I've received throughout my
+          career.</p>
+      </div>
+
+      <!-- Achievement Item -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- Achievement 1 -->
+        <div class="achievement-card bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+          <div class="flex items-start">
+            <div class="mr-4">
+              <div class="w-12 h-12 rounded-full bg-blue-900 flex items-center justify-center">
+                <i class="fas fa-trophy text-blue-300 text-xl"></i>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">Best Web Application</h3>
+              <p class="text-slate-300 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum urna sit amet nibh condimentum hendrerit. Suspendisse fringilla ipsum id dui mattis, nec commodo tortor rhoncus.</p>
+              <span class="text-sm text-emerald-400">TechExpo 2022</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievement 2 -->
+        <!-- <div class="achievement-card bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+          <div class="flex items-start">
+            <div class="mr-4">
+              <div class="w-12 h-12 rounded-full bg-purple-900 flex items-center justify-center">
+                <i class="fas fa-medal text-purple-300 text-xl"></i>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">Open Source Contributor of the Year</h3>
+              <p class="text-slate-300 mb-2">Recognized for significant contributions to multiple open-source projects
+                with over 500 merged pull requests.</p>
+              <span class="text-sm text-emerald-400">GitHub Community Awards 2021</span>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Achievement 3 -->
+        <!-- <div class="achievement-card bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+          <div class="flex items-start">
+            <div class="mr-4">
+              <div class="w-12 h-12 rounded-full bg-emerald-900 flex items-center justify-center">
+                <i class="fas fa-award text-emerald-300 text-xl"></i>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">Innovation in Web Accessibility</h3>
+              <p class="text-slate-300 mb-2">Awarded for developing a framework that makes web applications more
+                accessible to users with disabilities.</p>
+              <span class="text-sm text-emerald-400">Web Design Awards 2020</span>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Achievement 4 -->
+        <!-- <div class="achievement-card bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+          <div class="flex items-start">
+            <div class="mr-4">
+              <div class="w-12 h-12 rounded-full bg-red-900 flex items-center justify-center">
+                <i class="fas fa-star text-red-300 text-xl"></i>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">Top Performer Award</h3>
+              <p class="text-slate-300 mb-2">Recognized for exceptional performance and leadership in delivering
+                critical projects ahead of schedule.</p>
+              <span class="text-sm text-emerald-400">TechNova Solutions, 2022</span>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Achievement 5 -->
+        <!-- <div class="achievement-card bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+          <div class="flex items-start">
+            <div class="mr-4">
+              <div class="w-12 h-12 rounded-full bg-yellow-900 flex items-center justify-center">
+                <i class="fas fa-code text-yellow-300 text-xl"></i>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">Hackathon Winner</h3>
+              <p class="text-slate-300 mb-2">First place in a 48-hour hackathon for developing a real-time disaster
+                response coordination application.</p>
+              <span class="text-sm text-emerald-400">CodeForGood Hackathon 2019</span>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Achievement 6 -->
+        <!-- <div class="achievement-card bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+          <div class="flex items-start">
+            <div class="mr-4">
+              <div class="w-12 h-12 rounded-full bg-pink-900 flex items-center justify-center">
+                <i class="fas fa-book text-pink-300 text-xl"></i>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">Published Research Paper</h3>
+              <p class="text-slate-300 mb-2">Co-authored a research paper on optimizing web application performance that
+                was published in a leading tech journal.</p>
+              <span class="text-sm text-emerald-400">Journal of Web Technologies, 2021</span>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="py-20 tech-bg">
+    <div class="container mx-auto px-4 tech-content">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 section-heading">Certificates</h2>
+        <div class="w-24 h-1 bg-emerald-500 mx-auto"></div>
+        <p class="mt-4 text-slate-300 max-w-2xl mx-auto">Professional certifications that validate my expertise and
+          commitment to continuous learning.</p>
+      </div>
+
+      <!-- Certificate Item -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Certificate 1 -->
+        <div class="certificate-card bg-slate-800 rounded-lg overflow-hidden shadow-lg">
+          <div class="h-40 bg-gradient-to-r from-blue-600 to-blue-800 flex items-center justify-center p-6">
+            <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+              </path>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-white">AWS Certified Solutions Architect</h3>
+            <p class="text-slate-300 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum urna sit amet nibh condimentum hendrerit. Suspendisse fringilla ipsum id dui mattis, nec commodo tortor rhoncus.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-slate-400">Issued: Jan 2023</span>
+              <span class="text-sm text-slate-400">Credential ID: AWS-123456</span>
+            </div>
+            <div class="mt-4 pt-4 border-t border-slate-700">
+              <a href="#" class="text-emerald-400 hover:text-emerald-300 font-medium inline-flex items-center">
+                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 2 -->
+        <!-- <div class="certificate-card bg-slate-800 rounded-lg overflow-hidden shadow-lg">
+          <div class="h-40 bg-gradient-to-r from-purple-600 to-purple-800 flex items-center justify-center p-6">
+            <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+              </path>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-white">Meta Front-End Developer</h3>
+            <p class="text-slate-300 mb-4">Comprehensive certification in modern front-end development practices and
+              frameworks.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-slate-400">Issued: Mar 2022</span>
+              <span class="text-sm text-slate-400">Credential ID: META-789012</span>
+            </div>
+            <div class="mt-4 pt-4 border-t border-slate-700">
+              <a href="#" class="text-emerald-400 hover:text-emerald-300 font-medium inline-flex items-center">
+                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Certificate 3 -->
+        <!-- <div class="certificate-card bg-slate-800 rounded-lg overflow-hidden shadow-lg">
+          <div class="h-40 bg-gradient-to-r from-emerald-600 to-emerald-800 flex items-center justify-center p-6">
+            <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+              </path>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-white">Google UX Design Professional</h3>
+            <p class="text-slate-300 mb-4">Specialized training in user experience design principles and methodologies.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-slate-400">Issued: Nov 2021</span>
+              <span class="text-sm text-slate-400">Credential ID: GOOGLE-345678</span>
+            </div>
+            <div class="mt-4 pt-4 border-t border-slate-700">
+              <a href="#" class="text-emerald-400 hover:text-emerald-300 font-medium inline-flex items-center">
+                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Certificate 4 -->
+        <!-- <div class="certificate-card bg-slate-800 rounded-lg overflow-hidden shadow-lg">
+          <div class="h-40 bg-gradient-to-r from-yellow-600 to-yellow-800 flex items-center justify-center p-6">
+            <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+              </path>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-white">MongoDB Database Administrator</h3>
+            <p class="text-slate-300 mb-4">Advanced certification in MongoDB database management and optimization.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-slate-400">Issued: Jul 2021</span>
+              <span class="text-sm text-slate-400">Credential ID: MONGO-901234</span>
+            </div>
+            <div class="mt-4 pt-4 border-t border-slate-700">
+              <a href="#" class="text-emerald-400 hover:text-emerald-300 font-medium inline-flex items-center">
+                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Certificate 5 -->
+        <!-- <div class="certificate-card bg-slate-800 rounded-lg overflow-hidden shadow-lg">
+          <div class="h-40 bg-gradient-to-r from-pink-600 to-pink-800 flex items-center justify-center p-6">
+            <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+              </path>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-white">Microsoft Azure Developer Associate</h3>
+            <p class="text-slate-300 mb-4">Certification in developing solutions for Microsoft Azure cloud platform.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-slate-400">Issued: Feb 2021</span>
+              <span class="text-sm text-slate-400">Credential ID: MS-567890</span>
+            </div>
+            <div class="mt-4 pt-4 border-t border-slate-700">
+              <a href="#" class="text-emerald-400 hover:text-emerald-300 font-medium inline-flex items-center">
+                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Certificate 6 -->
+        <!-- <div class="certificate-card bg-slate-800 rounded-lg overflow-hidden shadow-lg">
+          <div class="h-40 bg-gradient-to-r from-red-600 to-red-800 flex items-center justify-center p-6">
+            <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+              </path>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-white">Certified Scrum Master</h3>
+            <p class="text-slate-300 mb-4">Professional certification in Agile project management and Scrum
+              methodologies.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-slate-400">Issued: Sep 2020</span>
+              <span class="text-sm text-slate-400">Credential ID: CSM-123789</span>
+            </div>
+            <div class="mt-4 pt-4 border-t border-slate-700">
+              <a href="#" class="text-emerald-400 hover:text-emerald-300 font-medium inline-flex items-center">
+                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-slate-900">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 section-heading">My Projects</h2>
+        <div class="w-24 h-1 bg-emerald-500 mx-auto"></div>
+        <p class="mt-4 text-slate-300 max-w-2xl mx-auto">A selection of my recent work and personal projects that
+          showcase my skills and expertise.</p>
+      </div>
+
+      <!-- Project Item -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Project 1 -->
+        <div class="project-card rounded-lg overflow-hidden shadow-lg">
+          <div class="relative h-48 bg-gradient-to-r from-blue-600 to-blue-800">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <i class="fas fa-laptop-code text-white text-5xl"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-white">Deploy</h3>
+            <p class="text-slate-300 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum urna sit amet nibh condimentum hendrerit. Suspendisse fringilla ipsum id dui mattis, nec commodo tortor rhoncus.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">React</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Node.js</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">MongoDB</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Stripe API</span>
+            </div>
+            <div class="flex justify-between">
+              <a href="#" class="text-emerald-400 hover:text-emerald-300 font-medium inline-flex items-center">
+                View Project <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+              <a href="#" class="text-slate-400 hover:text-slate-300 inline-flex items-center">
+                <i class="fab fa-github mr-1"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <!-- <div class="project-card rounded-lg overflow-hidden shadow-lg">
+          <div class="relative h-48 bg-gradient-to-r from-purple-600 to-purple-800">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <i class="fas fa-mobile-alt text-white text-5xl"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-white">Fitness Tracking App</h3>
+            <p class="text-slate-300 mb-4">A mobile application for tracking workouts, nutrition, and progress with
+              personalized recommendations and analytics.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">React Native</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Firebase</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Redux</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Chart.js</span>
+            </div>
+            <div class="flex justify-between">
+              <a href="#" class="text-emerald-400 hover:text-emerald-300 font-medium inline-flex items-center">
+                View Project <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+              <a href="#" class="text-slate-400 hover:text-slate-300 inline-flex items-center">
+                <i class="fab fa-github mr-1"></i> Code
+              </a>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Project 3 -->
+        <!-- <div class="project-card rounded-lg overflow-hidden shadow-lg">
+          <div class="relative h-48 bg-gradient-to-r from-emerald-600 to-emerald-800">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <i class="fas fa-chart-line text-white text-5xl"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-white">Financial Dashboard</h3>
+            <p class="text-slate-300 mb-4">An interactive dashboard for financial analysis with real-time data
+              visualization, portfolio management, and investment tracking.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Vue.js</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">D3.js</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Express</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">PostgreSQL</span>
+            </div>
+            <div class="flex justify-between">
+              <a href="#" class="text-emerald-400 hover:text-emerald-300 font-medium inline-flex items-center">
+                View Project <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+              <a href="#" class="text-slate-400 hover:text-slate-300 inline-flex items-center">
+                <i class="fab fa-github mr-1"></i> Code
+              </a>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Project 4 -->
+        <!-- <div class="project-card rounded-lg overflow-hidden shadow-lg">
+          <div class="relative h-48 bg-gradient-to-r from-red-600 to-red-800">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <i class="fas fa-comments text-white text-5xl"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-white">Real-time Chat Application</h3>
+            <p class="text-slate-300 mb-4">A secure messaging platform with end-to-end encryption, file sharing, and
+              group chat capabilities for teams and organizations.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Socket.io</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">React</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Node.js</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">MongoDB</span>
+            </div>
+            <div class="flex justify-between">
+              <a href="#" class="text-emerald-400 hover:text-emerald-300 font-medium inline-flex items-center">
+                View Project <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+              <a href="#" class="text-slate-400 hover:text-slate-300 inline-flex items-center">
+                <i class="fab fa-github mr-1"></i> Code
+              </a>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Project 5 -->
+        <!-- <div class="project-card rounded-lg overflow-hidden shadow-lg">
+          <div class="relative h-48 bg-gradient-to-r from-yellow-600 to-yellow-800">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <i class="fas fa-graduation-cap text-white text-5xl"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-white">E-Learning Platform</h3>
+            <p class="text-slate-300 mb-4">An educational platform with course management, interactive lessons, quizzes,
+              and progress tracking for students and instructors.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Angular</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Django</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">PostgreSQL</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">AWS</span>
+            </div>
+            <div class="flex justify-between">
+              <a href="#" class="text-emerald-400 hover:text-emerald-300 font-medium inline-flex items-center">
+                View Project <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+              <a href="#" class="text-slate-400 hover:text-slate-300 inline-flex items-center">
+                <i class="fab fa-github mr-1"></i> Code
+              </a>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Project 6 -->
+        <!-- <div class="project-card rounded-lg overflow-hidden shadow-lg">
+          <div class="relative h-48 bg-gradient-to-r from-pink-600 to-pink-800">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <i class="fas fa-calendar-alt text-white text-5xl"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-white">Project Management Tool</h3>
+            <p class="text-slate-300 mb-4">A comprehensive project management solution with task tracking, team
+              collaboration, resource allocation, and reporting features.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Next.js</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">GraphQL</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Prisma</span>
+              <span class="bg-slate-700 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded">Docker</span>
+            </div>
+            <div class="flex justify-between">
+              <a href="#" class="text-emerald-400 hover:text-emerald-300 font-medium inline-flex items-center">
+                View Project <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+              <a href="#" class="text-slate-400 hover:text-slate-300 inline-flex items-center">
+                <i class="fab fa-github mr-1"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="text-center mt-12">
+        <a href="#"
+          class="glow-button inline-flex items-center bg-emerald-500 hover:bg-emerald-600 text-slate-900 font-bold py-3 px-6 rounded-md transition duration-300">
+          View All Projects <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 tech-bg">
+    <div class="container mx-auto px-4 tech-content">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 section-heading">Contact Me</h2>
+        <div class="w-24 h-1 bg-emerald-500 mx-auto"></div>
+        <p class="mt-4 text-slate-300 max-w-2xl mx-auto">Have a project in mind or want to discuss potential
+          opportunities? Feel free to reach out!</p>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-10">
+        <div class="lg:w-1/2">
+          <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+            <h3 class="text-2xl font-bold text-white mb-6">Get In Touch</h3>
+
+            <!-- Contact Form -->
+            <form id="contact-form" class="space-y-6">
+              <div>
+                <label for="name" class="block mb-2 text-sm font-medium text-white">Your Name</label>
+                <input type="text" id="name" class="form-input w-full p-3 rounded-md" placeholder="John Doe" required>
+              </div>
+              <div>
+                <label for="email" class="block mb-2 text-sm font-medium text-white">Your Email</label>
+                <input type="email" id="email" class="form-input w-full p-3 rounded-md" placeholder="john@example.com"
+                  required>
+              </div>
+              <div>
+                <label for="subject" class="block mb-2 text-sm font-medium text-white">Subject</label>
+                <input type="text" id="subject" class="form-input w-full p-3 rounded-md" placeholder="Project Inquiry"
+                  required>
+              </div>
+              <div>
+                <label for="message" class="block mb-2 text-sm font-medium text-white">Message</label>
+                <textarea id="message" rows="5" class="form-input w-full p-3 rounded-md"
+                  placeholder="I'd like to discuss a potential project..." required></textarea>
+              </div>
+              <div>
+                <button type="submit" id="submit-form"
+                  class="glow-button w-full bg-emerald-500 hover:bg-emerald-600 text-slate-900 font-bold py-3 px-6 rounded-md transition duration-300 flex items-center justify-center">
+                  <i class="fas fa-paper-plane mr-2"></i> Send Message
+                </button>
+              </div>
+            </form>
+
+            <!-- Success Message (Hidden by default) -->
+            <div id="success-message"
+              class="hidden mt-4 p-4 bg-emerald-900/50 border border-emerald-500 text-emerald-300 rounded-md">
+              <div class="flex items-center">
+                <i class="fas fa-check-circle text-emerald-400 mr-2 text-xl"></i>
+                <p>Your message has been sent successfully! I'll get back to you soon.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:w-1/2">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Contact Info - Email -->
+            <div class="contact-card bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+              <div class="w-12 h-12 rounded-full bg-blue-900/50 flex items-center justify-center mb-4">
+                <i class="fas fa-envelope text-blue-400 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">Email</h3>
+              <p class="text-slate-300 mb-4">Feel free to email me directly</p>
+              <a href="mailto:sonyvansha@gmail.com"
+                class="text-emerald-400 hover:text-emerald-300">sonyvansha@gmail.com</a>
+            </div>
+
+            <!-- Contact Info - Phone -->
+            <div class="contact-card bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+              <div class="w-12 h-12 rounded-full bg-purple-900/50 flex items-center justify-center mb-4">
+                <i class="fas fa-phone-alt text-purple-400 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">Phone</h3>
+              <p class="text-slate-300 mb-4">Available during business hours</p>
+              <a href="tel:+1234567890" class="text-emerald-400 hover:text-emerald-300">+1 (234) 567-890</a>
+            </div>
+
+            <!-- Contact Info - Location -->
+            <div class="contact-card bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+              <div class="w-12 h-12 rounded-full bg-emerald-900/50 flex items-center justify-center mb-4">
+                <i class="fas fa-map-marker-alt text-emerald-400 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">Location</h3>
+              <p class="text-slate-300 mb-4">Based in</p>
+              <p class="text-emerald-400">Ngaringan, Kabupaten Blitar, Jawa Timur,</p>
+            </div>
+
+            <!-- Contact Info - Social -->
+            <div class="contact-card bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+              <div class="w-12 h-12 rounded-full bg-red-900/50 flex items-center justify-center mb-4">
+                <i class="fas fa-share-alt text-red-400 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">Social</h3>
+              <p class="text-slate-300 mb-4">Connect with me on</p>
+              <div class="flex space-x-4">
+                <a href="#" class="text-emerald-400 hover:text-emerald-300 text-xl">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="text-emerald-400 hover:text-emerald-300 text-xl">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="text-emerald-400 hover:text-emerald-300 text-xl">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="text-emerald-400 hover:text-emerald-300 text-xl">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Availability Card -->
+          <!-- <div class="contact-card bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700 mt-6">
+                        <h3 class="text-xl font-bold text-white mb-4">Current Availability</h3>
+                        <p class="text-slate-300 mb-4">I'm currently available for freelance work and open to discussing new opportunities. My typical response time is within 24 hours.</p>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-emerald-500 mr-2 animate-pulse"></div>
+                            <span class="text-emerald-400">Available for new projects</span>
+                        </div>
+                    </div> -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-800 text-white py-10 border-t border-slate-700">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <a href="#" class="text-2xl font-bold code-font clickable">Sony
+          <span class="text-emerald-400">Vansha</span></a>
+          <p class="text-slate-400 mt-2">
+            Building digital experiences that matter.
+          </p>
+        </div>
+
+        <!-- Nav -->
+        <!-- <div class="flex flex-wrap justify-center gap-4 mb-6 md:mb-0">
+                    <a href="#home" class="text-slate-300 hover:text-emerald-400 clickable">Home</a>
+                    <a href="#about" class="text-slate-300 hover:text-emerald-400 clickable">About</a>
+                    <a href="#experience" class="text-slate-300 hover:text-emerald-400 clickable">Experience</a>
+                    <a href="#education" class="text-slate-300 hover:text-emerald-400 clickable">Education</a>
+                    <a href="#skills" class="text-slate-300 hover:text-emerald-400 clickable">Skills</a>
+                    <a href="#contact" class="text-slate-300 hover:text-emerald-400 clickable">Contact</a>
+                </div> -->
+
+        <div>
+          <a href="#home"
+            class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center text-slate-300 hover:text-emerald-400 hover:bg-slate-600 transition duration-300 clickable">
+            <i class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="border-t border-slate-700 mt-8 pt-8 text-center">
+        <p class="text-slate-400">
+          &copy; 2023 Sony Vansha. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Script -->
+  <script src="js/script.js"></script>
+  <!-- <script src="js/window.js"></script> -->
+  <script src="js/skill.js"></script>
+</body>
+
+</html>
