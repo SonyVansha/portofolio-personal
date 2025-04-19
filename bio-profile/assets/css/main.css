@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  @apply transition-colors duration-300;
+}
+
+/* Improved focus states for accessibility */
+a:focus,
+button:focus {
+  @apply outline outline-2 outline-blue-400 outline-offset-2;
+}
+
+/* Profile image */
+.profile-img {
+  @apply w-[100px] h-[100px] rounded-full flex items-center justify-center text-4xl transition-all duration-300 overflow-hidden relative;
+  border: 2px solid; /* Inner solid border */
+  @apply dark:border-indigo-300 border-blue-300;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.profile-img img {
+  @apply w-full h-full object-cover rounded-full;
+}
+
+/* Gradient border using pseudo-element */
+.profile-img::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    #4f46e5,
+    #a855f7,
+    #ec4899,
+    #a855f7,
+    #4f46e5
+  ); /* Gradient colors */
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+/* Glow effect */
+.profile-img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(79, 70, 229, 0.5); /* Indigo glow */
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/* Hover animation */
+.profile-img:hover {
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+.profile-img:hover::before {
+  transform: rotate(360deg); /* Rotate gradient on hover */
+}
+
+/* Light/dark mode adjustments */
+.dark .profile-img::after {
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.5); /* Purple glow in dark mode */
+}
+
+/* Link button */
+.link-btn {
+  @apply transition-all duration-200 relative overflow-hidden;
+}
+
+.link-btn:active {
+  @apply scale-[0.98];
+}
+
+.link-btn::before {
+  content: '';
+  @apply absolute top-0 left-0 w-full h-full bg-white/5 opacity-0 transition-opacity duration-200;
+}
+
+.link-btn:hover::before {
+  @apply opacity-100;
+}
+
+/* Button icon */
+.btn-icon {
+  @apply transition-transform duration-200;
+}
+
+.link-btn:hover .btn-icon {
+  @apply translate-x-[3px];
+}
+
+/* Social icons */
+.social-icon {
+  @apply transition-transform duration-200 flex items-center justify-center w-11 h-11;
+}
+
+.social-icon:hover {
+  @apply -translate-y-[3px];
+}
+
+/* Background patterns */
+.bg-pattern-dark {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.075) 1px, transparent 1px);
+  background-size: 25px 25px;
+}
+
+.bg-pattern-light {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 25px 25px;
+}
+
+/* Content container */
+.content-container {
+  @apply max-w-[500px] mx-auto px-4;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    @apply opacity-0 translate-y-2;
+  }
+  to {
+    @apply opacity-100 translate-y-0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Theme toggle */
+.theme-toggle {
+  @apply fixed top-5 right-5 z-50 w-12 h-12 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 shadow-md;
+}
+
+.theme-toggle:hover {
+  @apply rotate-[15deg];
+}
+
+.theme-toggle svg {
+  @apply transition-all duration-300;
+}
+
+/* Modal styles */
+.modal {
+  @apply fixed inset-0 flex items-center justify-center z-50 opacity-0 invisible transition-all duration-300;
+}
+
+.modal.active {
+  @apply opacity-100 visible;
+}
+
+.modal-overlay {
+  @apply absolute inset-0 bg-black/50 backdrop-blur-sm;
+}
+
+.modal-container {
+  @apply relative w-[90%] max-w-[400px] rounded-xl overflow-hidden transform scale-90 transition-transform duration-300;
+}
+
+.modal.active .modal-container {
+  @apply scale-100;
+}
+
+/* Copy animation */
+@keyframes copied {
+  0%, 100% {
+    @apply scale-100;
+  }
+  50% {
+    @apply scale-110;
+  }
+}
+
+.copy-animation {
+  animation: copied 0.3s ease;
+}
+
+/* Link input */
+.link-input {
+  @apply border-none outline-none w-full p-3 rounded-lg text-sm;
+}
+
+/* Copy message */
+#copyMessage {
+  @apply mt-2 text-sm dark:text-green-400 text-green-600 transition-opacity duration-300;
+}
+
+/* Ripple animation */
+@keyframes ripple {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
+
+@keyframes toggle-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-toggle {
+  animation: toggle-rotate 0.5s ease;
+}
